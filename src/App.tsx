@@ -1,9 +1,15 @@
+import AppProviders from './components/AppProviders/AppProviders';
+import UsersOverview from './components/UsersOverview/UsersOverview';
+
 const App = () => {
   return (
-    <div>
-      <h1>Overview</h1>
-      <p>Here you can find user details.</p>
-    </div>
+    <AppProviders>
+      <main className='flex w-full justify-center'>
+        <div className='w-full max-w-5xl p-4'>
+          <UsersOverview />
+        </div>
+      </main>
+    </AppProviders>
   );
 };
 
