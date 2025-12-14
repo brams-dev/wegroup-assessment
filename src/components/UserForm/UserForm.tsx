@@ -3,7 +3,7 @@ import Form from '../form/Form/Form';
 import TextField from '../form/Field/TextField';
 import SelectField from '../form/Field/SelectField';
 import Submit from '../form/Submit/Submit';
-import { User, UserFormValues } from '~/types';
+import { UserFormValues } from '~/types';
 import { toFormikValidationSchema } from 'zod-formik-adapter';
 import z from 'zod';
 
@@ -19,8 +19,8 @@ const validationSchema = z.object({
 });
 
 type Props = {
-  initialValues: Omit<User, 'id'>;
-  handleSubmit: (values: Omit<User, 'id'>) => void;
+  initialValues: UserFormValues;
+  handleSubmit: (values: UserFormValues) => void;
   submit?: React.ReactNode;
 };
 
