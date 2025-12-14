@@ -5,7 +5,7 @@ export type User = {
   role: 'User' | 'Admin';
 };
 
-export type CreateUserFormValues = {
+export type UserFormValues = {
   name: string;
   email: string;
   role: 'User' | 'Admin';

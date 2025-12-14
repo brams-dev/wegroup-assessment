@@ -14,7 +14,7 @@ const getUsers = async ({ sort }: Options): Promise<User[]> => {
 
 export default function useUsers({ sort }: Options) {
   return useQuery({
-    queryKey: ['users', sort],
+    queryKey: ['users', 'list', sort],
     queryFn: () => getUsers({ sort }),
     staleTime: Infinity,
     gcTime: Infinity,

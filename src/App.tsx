@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router';
 import AppProviders from '~/components/AppProviders/AppProviders';
 import UsersOverview from '~/components/UsersOverview/UsersOverview';
 import CreateUser from '~/components/CreateUser/CreateUser';
+import EditUser from './components/EditUser/EditUser';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
           <Routes>
             <Route index element={<UsersOverview />} />
             <Route path='new' element={<CreateUser />} />
+            <Route path=':id/edit' element={<EditUser />} />
           </Routes>
         </div>
       </main>
