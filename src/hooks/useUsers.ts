@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { User } from '../types';
+import { User } from '~/types';
 
 type Options = {
   sort: string;
@@ -16,6 +16,7 @@ export default function useUsers({ sort }: Options) {
   return useQuery({
     queryKey: ['users', sort],
     queryFn: () => getUsers({ sort }),
-    staleTime: 1_000 * 60,
+    staleTime: Infinity,
+    gcTime: Infinity,
   });
 }

@@ -1,5 +1,5 @@
-import { User } from '../../types';
-import { cn } from '../../utils';
+import { User } from '~/types';
+import { cn } from '~/utils';
 
 export default function UserItem({ name, email, role }: User) {
   return (

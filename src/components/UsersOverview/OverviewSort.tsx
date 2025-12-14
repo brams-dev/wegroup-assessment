@@ -1,5 +1,11 @@
 import { ArrowDownAZIcon, ArrowUpAZIcon } from 'lucide-react';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '~/components/ui/select';
 import { useOverview } from '~/providers/OverviewProvider/OverviewProvider';
 
 type SortOption = {

@@ -4,3 +4,9 @@ export type User = {
   email: string;
   role: 'User' | 'Admin';
 };
+
+export type CreateUserFormValues = {
+  name: string;
+  email: string;
+  role: 'User' | 'Admin';
+};
