@@ -14,9 +14,7 @@ export default function useUpdateUser() {
         body: JSON.stringify(values),
       });
 
-      const data = result.json();
-
-      return data;
+      return result.json();
     },
     onSuccess: (data, { id }: { id: number; values: UserFormValues }) => {
       queryClient.invalidateQueries({ queryKey: ['users', 'list'] });

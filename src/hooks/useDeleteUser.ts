@@ -9,12 +9,9 @@ export default function useDeleteUser() {
         method: 'DELETE',
       });
 
-      const data = result.json();
-
-      return data;
+      return result.json();
     },
     onSuccess: (_data, id: number) => {
-      console.log('success delete ', id);
       queryClient.invalidateQueries({ queryKey: ['users', 'list'] });
       queryClient.removeQueries({ queryKey: ['users', id] });
     },

@@ -1,5 +1,5 @@
 import { Loader2Icon } from 'lucide-react';
-import { useOverview } from '~/providers/OverviewProvider/OverviewProvider';
+import useOverview from '~/providers/OverviewProvider/useOverview';
 import useUsers from '~/hooks/useUsers';
 import UserItem from './UserItem';
 import UsersListSkeleton from './UsersListSkeleton';

@@ -6,7 +6,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '~/components/ui/select';
-import { useOverview } from '~/providers/OverviewProvider/OverviewProvider';
+import useOverview from '~/providers/OverviewProvider/useOverview';
 
 type SortOption = {
   column: 'Name' | 'Role';

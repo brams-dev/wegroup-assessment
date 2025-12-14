@@ -2,11 +2,11 @@ import { useFormikContext } from 'formik';
 import { Loader2Icon } from 'lucide-react';
 import { PropsWithChildren } from 'react';
 import { Button } from '~/components/ui/button';
-import { CreateUserFormValues } from '~/types';
+import { UserFormValues } from '~/types';
 import { cn } from '~/utils';
 
 export default function Submit({ children }: PropsWithChildren) {
-  const { isSubmitting, isValid } = useFormikContext<CreateUserFormValues>();
+  const { isSubmitting, isValid } = useFormikContext<UserFormValues>();
 
   const isDisabled = isSubmitting || !isValid;
 

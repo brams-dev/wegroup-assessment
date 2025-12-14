@@ -14,9 +14,7 @@ export default function useCreateUser() {
         body: JSON.stringify(values),
       });
 
-      const data = result.json();
-
-      return data;
+      return result.json();
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['users', 'list'] });

@@ -7,9 +7,7 @@ type Options = {
 
 const getUsers = async ({ sort }: Options): Promise<User[]> => {
   const result = await fetch(`${import.meta.env.VITE_API_BASE}/users?_sort=${sort}`);
-  const data = await result.json();
-
-  return data;
+  return result.json();
 };
 
 export default function useUsers({ sort }: Options) {

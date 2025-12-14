@@ -25,7 +25,7 @@ export default function UserItem({ id, name, email, role }: User) {
         <span className='text-sm text-neutral-500'>{email}</span>
       </div>
 
-      <div className='hidden gap-2 group-hover:flex'>
+      <div className='hidden gap-2 group-hover:flex pointer-coarse:flex'>
         <Button variant='secondary' size='icon-sm'>
           <Link to={`${id}/edit`}>
             <PencilIcon />

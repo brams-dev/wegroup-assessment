@@ -21,17 +21,16 @@ const validationSchema = z.object({
 type Props = {
   initialValues: Omit<User, 'id'>;
   handleSubmit: (values: Omit<User, 'id'>) => void;
-  isInitialValid?: boolean;
   submit?: React.ReactNode;
 };
 
-export default function UserForm({ initialValues, handleSubmit, isInitialValid, submit }: Props) {
+export default function UserForm({ initialValues, handleSubmit, submit }: Props) {
   return (
     <Formik<UserFormValues>
       initialValues={initialValues}
       onSubmit={handleSubmit}
       validationSchema={toFormikValidationSchema(validationSchema)}
-      isInitialValid={isInitialValid ?? false}
+      validateOnMount
       enableReinitialize
     >
       {({ handleSubmit }) => (
