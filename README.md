@@ -10,16 +10,17 @@ Your task is to develop a **Users overview** application. The application should
 
 This assignment will give us insights in how well you can create a Front-End application for a Back-End. There are several important points where we will rate your code on:
 
-* UX
-* Using best practices
-* Code structure
-* Code readability
-* State management
-* API integration and handling
-* Type usage
-* Styling
+- UX
+- Using best practices
+- Code structure
+- Code readability
+- State management
+- API integration and handling
+- Type usage
+- Styling
 
 ### Requirements:
+
 - Use **React** with **TypeScript**.
 - Use **React Query** for efficient data fetching and synchronization with the API.
 - Use any styling framework or library of your choice. **Tailwind CSS** is preferred, but feel free to choose what best suits your workflow.
@@ -55,8 +56,9 @@ The mock API is available at `http://localhost:3001/` and includes the following
    ```
 
 ### I'm finished, what now?
+
 Please provide the following:
 
-* A link to your public GitHub repository containing the complete project code
+- A link to your public GitHub repository containing the complete project code
 
 That's all!
