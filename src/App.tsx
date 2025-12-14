@@ -1,3 +1,4 @@
+import { Route, Routes } from 'react-router';
 import AppProviders from './components/AppProviders/AppProviders';
 import UsersOverview from './components/UsersOverview/UsersOverview';
 
@@ -6,7 +7,9 @@ const App = () => {
     <AppProviders>
       <main className='flex w-full justify-center'>
         <div className='w-full max-w-5xl p-4'>
-          <UsersOverview />
+          <Routes>
+            <Route index element={<UsersOverview />} />
+          </Routes>
         </div>
       </main>
     </AppProviders>

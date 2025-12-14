@@ -3,7 +3,7 @@ import { cn } from '../../utils';
 
 export default function UserItem({ name, email, role }: User) {
   return (
-    <li className='flex flex-col'>
+    <li className='flex flex-col border-b-neutral-200 px-4 py-4 not-last:border-b'>
       <div className='flex items-center gap-2'>
         <span className='font-semibold text-neutral-950'>{name}</span>
 
